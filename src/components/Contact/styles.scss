@@ -1,0 +1,51 @@
+.contact {
+  //text-align: center;
+  padding-left: 50px;
+}
+
+.contact-form {
+  width: 130%;
+  margin: 0 auto;
+  position: relative;
+  left: 9%;
+}
+
+.customerService {
+  a {
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contact-form {
+    width: 150%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contact-form {
+    width: 90%;
+    left: 1%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact-form {
+    width: 90%;
+    left: 1%;
+  }
+}

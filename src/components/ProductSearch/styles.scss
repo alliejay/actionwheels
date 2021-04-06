@@ -1,0 +1,122 @@
+.productSearchFilter {
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+}
+
+.productSearchButton {
+  margin-right: 15px;
+}
+
+
+@media screen and (max-width: 675px) {
+  .productFilters {
+    display: block;
+  }
+}
+
+.productSearchContainer {
+  margin-right: 20px;
+}
+
+.productCard.ant-card {
+  display: inline-block;
+  //margin-right: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  min-width: 288px;
+}
+
+.coverImage {
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: 50% 50%;
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .coverImage {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .coverImage {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 923px) {
+  .coverImage {
+    height: 380px;
+  }
+  .productCard.ant-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .coverImage {
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .coverImage {
+    height: 400px;
+    img {
+      width: 85%;
+    }
+  }
+  .productCard.ant-card {
+    width: 98%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .coverImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .coverImage {
+    height: 250px;
+  }
+}
+
+.buttons {
+  display: inline-block;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.assemblyLink {
+  position: absolute;
+  right: 10px;
+}
+
+.productCards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

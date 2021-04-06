@@ -1,0 +1,159 @@
+.manuals {
+  margin: auto;
+  width: 40%;
+  position: relative;
+  display: block;
+  .customerServiceWhite {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .manuals {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .manuals {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .manuals {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  .manuals {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .manuals {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .manuals {
+    width: 75%;
+  }
+}
+
+.guide-dropdowns {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  position: absolute;
+  left: 10%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 520px) {
+  .secondPanel h2 {
+    font-size: 20px;
+  }
+  .secondPanel h3 {
+    font-size: 18px;
+  }
+  .manuals {
+    width: 90%;
+    top: 25px;
+  }
+  .guide-dropdowns {
+    h3 {
+      font-size: 15px;
+    }
+  }
+  #self-help-text {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .guide-dropdowns {
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .guide-dropdowns {
+    h3 {
+      font-size: 14px;
+    }
+    left: 0;
+  }
+}
+
+.guide-extraHelp {
+  position: relative;
+  bottom: -190px;
+  margin: 0 auto;
+  h3 {
+    font-weight: 300;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.guide-dropdown {
+  position: relative;
+  left: 29px;
+  display: inline-block;
+  .label {
+    padding-right: 80px;
+  }
+}
+
+.video-dropdown {
+  position: relative;
+  left: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  .label {
+    padding-right: 80px;
+  }
+}
+
+.user-dropdown {
+  position: relative;
+  left: 65px;
+  display: inline-block;
+  margin-top: 15px;
+  .label {
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .user-dropdown {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .guide-dropdown {
+    .label {
+      padding-right: 50px;
+    }
+  }
+  .user-dropdown {
+    .label {
+      padding-right: 50px;
+    }
+  }
+  .guide-extraHelp {
+    bottom: -180px;
+  }
+}

@@ -1,0 +1,58 @@
+.brands-container {
+  background-color: white;
+  height: auto;
+}
+
+.brandLogo {
+  width: 250px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.logoCol {
+  text-align: center;
+  height: 215px;
+  line-height: 215px;
+}
+
+.textLogo {
+  font-style: italic;
+}
+
+#action_wheels {
+  width: 275px;
+}
+
+#warnerbros {
+  width: 200px;
+}
+
+#seascooter {
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.logoCol {
+  width: 32%;
+}
+
+@media screen and (max-width: 843px) {
+  .logoCol {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logoCol {
+    width: 98%;
+  }
+}
+
