@@ -9,11 +9,6 @@ import {
 } from "react-router-dom";
 
 const PageWrapper = () => {
-
-  const pathname = window.location.pathname;
-
-  console.log("windonw", window.location.pathname)
-
     return <div>
       <Router>
             <ActionWheels />

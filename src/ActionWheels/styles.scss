@@ -1,5 +1,26 @@
 .header {
   background: white !important;
+  height: 100px !important;
+}
+
+.ant-menu-horizontal {
+  border: none !important;
+}
+
+.navigationMenu {
+  width: fit-content;
+  float: right;
+  position: relative;
+  top: 35%;
+}
+
+.menuItem {
+  font-size: 24px;
+}
+
+.ant-menu-item-selected,
+.ant-menu-item-active {
+  //border: none !important;
 }
 
 .contentBox {
@@ -8,7 +29,17 @@
 
 .actionSiteLogo {
   float: left;
-  width: 110px;
+  width: 200px;
   margin: 5px;
   background: rgba(255, 255, 255, 0.2);
+}
+
+.actionWheelsBanner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  top: 100px;
 }

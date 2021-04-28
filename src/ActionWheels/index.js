@@ -6,9 +6,12 @@ import About from './About';
 import Contact from './Contact';
 import ProductSearch from '../components/ProductSearch';
 import Warranty from './Warranty';
+import ReviewPage from './Review';
+import ReviewBanner from './Review/reviewBanner.js'
 
 //images
 import actionWheels from '../img/action_wheels.png';
+import talonBanner from '../img/talon_banner.jpg';
 
 //styles
 import './styles.scss';
@@ -21,6 +24,7 @@ const CONTACT = 'contact';
 const PRODUCTS = 'products';
 const WARRANTY = 'warranty';
 const RESOURCES = 'resources';
+const REVIEW = 'review';
 
 const PAGE_PATHS = Object.freeze({
   [ABOUT]: {
@@ -41,6 +45,10 @@ const PAGE_PATHS = Object.freeze({
   },
   [RESOURCES]: {
     path: `/${RESOURCES}`
+  },
+  [REVIEW]: {
+    path: `/${REVIEW}`,
+    component: <ReviewPage />
   }
 });
 
@@ -51,23 +59,25 @@ const ActionWheels = (props) => {
     setSelectedPage(key)
   };
 
-  console.log("PAGE_PATHS[selectedPage]", PAGE_PATHS[selectedPage])
+  console.log("window.location.pathname", window.location.pathname)
 
   return (
     <Layout theme="light">
       <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <img src={actionWheels} className="actionSiteLogo"/>
-        <Menu theme="light" mode="horizontal" defaultSelectedKeys={['actionwheels']} onSelect={({key}) => renderComponent({key})}>
-          <Menu.Item key="actionwheels">About</Menu.Item>
-          <Menu.Item key="contact">Contact</Menu.Item>
-          <Menu.Item key="products">Products</Menu.Item>
-          <Menu.Item key="warranty">Warranty</Menu.Item>
-          <Menu.Item key="resources">Resources</Menu.Item>
+        <Menu className="navigationMenu" theme="light" mode="horizontal" defaultSelectedKeys={['actionwheels']} onSelect={({key}) => renderComponent({key})}>
+          <Menu.Item className="menuItem" key="actionwheels">ABOUT</Menu.Item>
+          <Menu.Item className="menuItem" key="contact">CONTACT</Menu.Item>
+          <Menu.Item className="menuItem" key="products">PRODUCTS</Menu.Item>
+          <Menu.Item className="menuItem" key="warranty">WARRANTY</Menu.Item>
+          <Menu.Item className="menuItem" key="resources">RESOURCES</Menu.Item>
         </Menu>
       </Header>
+      <img src={talonBanner} className="actionWheelsBanner" />
+      {window.location.pathname === `/${REVIEW}` && <ReviewBanner/>}
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-          {PAGE_PATHS[selectedPage]['component']}
+          {window.location.pathname === `/${REVIEW}` ? <ReviewPage /> : PAGE_PATHS[selectedPage]['component']}
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>© Action Wheels</Footer>
