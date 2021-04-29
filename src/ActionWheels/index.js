@@ -76,7 +76,7 @@ const ActionWheels = (props) => {
       <img src={talonBanner} className="actionWheelsBanner" />
       {window.location.pathname === `/${REVIEW}` && <ReviewBanner/>}
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
-        <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+        <div style={{ padding: 24, minHeight: 380 }}>
           {window.location.pathname === `/${REVIEW}` ? <ReviewPage /> : PAGE_PATHS[selectedPage]['component']}
         </div>
       </Content>
