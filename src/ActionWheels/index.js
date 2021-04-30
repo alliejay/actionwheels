@@ -75,13 +75,18 @@ const ActionWheels = () => {
     )
   };
 
+  console.log("window.location.pathname", window.location.pathname);
+
   useEffect(() => {
     if(window.location.pathname === `/${REVIEW}`) {
+      console.log("review hit")
       setSelectedPage(REVIEW)
     } else {
       setDefaultSelectedKey(['actionwheels']);
     }
   }, []);
+
+  console.log("selectedPage", selectedPage);
 
   return (
     <Layout theme="light">
