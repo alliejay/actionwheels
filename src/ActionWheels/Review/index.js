@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Card } from 'antd';
 import { orderBy as _orderBy } from 'lodash';
 import { transformData } from '../../utilities/productMapping';
 import './styles.scss';

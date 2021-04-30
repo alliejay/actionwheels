@@ -15,7 +15,7 @@
 .selectProductText {
   background-color: #343434;
   text-align: center;
-  margin: 50px auto;
+  margin: 10px auto 50px auto;
   width: fit-content;
   padding: 20px;
   font-size: 34px;
@@ -41,4 +41,51 @@
   text-align: center;
   color: black;
   font-size: 18px;
+}
+
+@media screen and (max-width: 999px) {
+  .reviewBanner {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .reviewBanner {
+    h4 {
+      font-size: 17px;
+    }
+  }
+  .selectProductText {
+    font-size: 28px;
+  }
+  .reviewImageContainer {
+    margin: 15px;
+  }
+  .reviewImage {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .reviewBanner {
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
+  .selectProductText {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .reviewBanner {
+    padding: 20px;
+  }
+  .selectProductText {
+    font-size: 20px;
+  }
 }

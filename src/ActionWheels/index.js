@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Layout, Menu } from 'antd';
+import React, { useState, useEffect } from 'react'
+import { Layout, Menu, Dropdown } from 'antd';
 
 //components
 import About from './About';
@@ -12,6 +12,9 @@ import ReviewBanner from './Review/reviewBanner.js'
 //images
 import actionWheels from '../img/action_wheels.png';
 import talonBanner from '../img/talon_banner.jpg';
+import {
+  MenuOutlined
+} from '@ant-design/icons';
 
 //styles
 import './styles.scss';
@@ -52,35 +55,57 @@ const PAGE_PATHS = Object.freeze({
   }
 });
 
-const ActionWheels = (props) => {
+const ActionWheels = () => {
   const [selectedPage, setSelectedPage] = useState('actionwheels');
+  const [defaultSelectedKey, setDefaultSelectedKey] = useState([]);
 
   const renderComponent = ({key}) => {
     setSelectedPage(key)
   };
 
-  console.log("window.location.pathname", window.location.pathname)
+  const createMenu = (mode) => {
+    return (
+      <Menu className="navigationMenu" theme="light" mode={mode} defaultSelectedKeys={defaultSelectedKey}>
+        <Menu.Item className="menuItem" key="actionwheels" onClick={({key}) => renderComponent({key})}>ABOUT</Menu.Item>
+        <Menu.Item className="menuItem" key="contact" onClick={({key}) => renderComponent({key})}>CONTACT</Menu.Item>
+        <Menu.Item className="menuItem" key="products" onClick={({key}) => renderComponent({key})}>PRODUCTS</Menu.Item>
+        <Menu.Item className="menuItem" key="warranty" onClick={({key}) => renderComponent({key})}>WARRANTY</Menu.Item>
+        <Menu.Item className="menuItem" key="resources" onClick={({key}) => renderComponent({key})}>RESOURCES</Menu.Item>
+      </Menu>
+    )
+  };
+
+  useEffect(() => {
+    if(window.location.pathname === `/${REVIEW}`) {
+      setSelectedPage(REVIEW)
+    } else {
+      setDefaultSelectedKey(['actionwheels']);
+    }
+  }, []);
 
   return (
     <Layout theme="light">
       <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <img src={actionWheels} className="actionSiteLogo"/>
-        <Menu className="navigationMenu" theme="light" mode="horizontal" defaultSelectedKeys={['actionwheels']} onSelect={({key}) => renderComponent({key})}>
-          <Menu.Item className="menuItem" key="actionwheels">ABOUT</Menu.Item>
-          <Menu.Item className="menuItem" key="contact">CONTACT</Menu.Item>
-          <Menu.Item className="menuItem" key="products">PRODUCTS</Menu.Item>
-          <Menu.Item className="menuItem" key="warranty">WARRANTY</Menu.Item>
-          <Menu.Item className="menuItem" key="resources">RESOURCES</Menu.Item>
-        </Menu>
+        <span className="bigMenu">
+          {createMenu("horizontal")}
+        </span>
+        <div className="hamburgerNav">
+          <Dropdown overlay={createMenu("vertical")}>
+            <a className="ant-dropdown-link">
+              <MenuOutlined className="hamburgerMenu" />
+            </a>
+          </Dropdown>
+        </div>
       </Header>
       <img src={talonBanner} className="actionWheelsBanner" />
-      {window.location.pathname === `/${REVIEW}` && <ReviewBanner/>}
+      {selectedPage === REVIEW && <ReviewBanner/>}
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
         <div style={{ padding: 24, minHeight: 380 }}>
-          {window.location.pathname === `/${REVIEW}` ? <ReviewPage /> : PAGE_PATHS[selectedPage]['component']}
+          {PAGE_PATHS[selectedPage]['component']}
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>© Action Wheels</Footer>
+      <Footer className="actionWheelsFooter" style={{ textAlign: 'center' }} />
     </Layout>
   )
 };

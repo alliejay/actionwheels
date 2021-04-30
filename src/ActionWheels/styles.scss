@@ -3,8 +3,17 @@
   height: 100px !important;
 }
 
+.actionWheelsFooter {
+  margin-top: 15px;
+  background-color: #CCCCCC !important;
+}
+
 .ant-menu-horizontal {
   border: none !important;
+}
+
+.hamburgerNav {
+  display: none;
 }
 
 .navigationMenu {
@@ -25,6 +34,7 @@
 
 .contentBox {
   min-height: 100vh !important;
+  padding-top: 50px !important;
 }
 
 .actionSiteLogo {
@@ -42,4 +52,100 @@
   object-position: 50% 50%;
   position: relative;
   top: 100px;
+}
+
+
+@media screen and (max-width: 1099px) {
+  .header {
+    height: 80px !important;
+  }
+  .navigationMenu {
+    top: 19%;
+  }
+  .menuItem {
+    font-size: 20px;
+  }
+  .actionSiteLogo {
+    width: 180px;
+  }
+  .actionWheelsBanner {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header {
+    height: 70px !important;
+  }
+  .navigationMenu {
+    top: 5%;
+  }
+  .menuItem {
+    font-size: 17px;
+  }
+  .actionSiteLogo {
+    width: 160px;
+  }
+  .actionWheelsBanner {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menuItem {
+    font-size: 15px;
+  }
+  .actionSiteLogo {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menuItem {
+    font-size: 13px;
+  }
+  .actionSiteLogo {
+    width: 140px;
+  }
+}
+
+//@media screen and (max-width: 850px) {
+//  .header {
+//    height: 70px !important;
+//  }
+//  .navigationMenu {
+//    top: 5%;
+//  }
+//  .menuItem {
+//    font-size: 11px;
+//  }
+//  .actionSiteLogo {
+//    width: 140px;
+//  }
+//  .actionWheelsBanner {
+//    top: 70px;
+//  }
+//}
+
+@media screen and (max-width: 850px) {
+  .header {
+    text-align: center;
+  }
+  .actionSiteLogo {
+    float: none;
+    width: 155px;
+  }
+  .bigMenu {
+    display: none;
+  }
+  .hamburgerNav {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 12%;
+  }
+  .hamburgerMenu {
+    font-size: 30px;
+    color: black !important;
+  }
 }
