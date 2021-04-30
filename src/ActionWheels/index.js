@@ -70,7 +70,7 @@ const ActionWheels = () => {
         <Menu.Item className="menuItem" key="contact" onClick={({key}) => renderComponent({key})}>CONTACT</Menu.Item>
         <Menu.Item className="menuItem" key="products" onClick={({key}) => renderComponent({key})}>PRODUCTS</Menu.Item>
         <Menu.Item className="menuItem" key="warranty" onClick={({key}) => renderComponent({key})}>WARRANTY</Menu.Item>
-        <Menu.Item className="menuItem" key="resources" onClick={({key}) => renderComponent({key})}>RESOURCES</Menu.Item>
+        <Menu.Item className="menuItem" key="review" onClick={({key}) => renderComponent({key})}>REVIEW</Menu.Item>
       </Menu>
     )
   };
