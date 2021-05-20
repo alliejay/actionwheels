@@ -12,7 +12,6 @@ function App() {
     if (response.status !== 200) {
       throw Error(body.message)
     }
-    console.log("body", body)
     return body;
   };
 

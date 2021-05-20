@@ -118,7 +118,9 @@ const ActionWheels = () => {
         </div>
       </Header>
       <img src={talonBanner} className="actionWheelsBanner" />
-      {window.location.pathname === "/reviews" && <ReviewBanner/>}
+        <Route path="/reviews">
+            <ReviewBanner />
+        </Route>
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
         <div style={{ padding: 24, minHeight: 380 }}>
 
