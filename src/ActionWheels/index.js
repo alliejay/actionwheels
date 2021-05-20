@@ -87,7 +87,9 @@ const ActionWheels = () => {
         <Menu.Item className="menuItem" key="warranty">
             <Link to="/warranty">WARRANTY</Link>
         </Menu.Item>
-        <Menu.Item className="menuItem" key="review">RESOURCES</Menu.Item>
+        <Menu.Item className="menuItem" key="review">
+            <Link to="/reviews">REVIEW</Link>
+        </Menu.Item>
       </Menu>
     )
   };
