@@ -10,11 +10,10 @@ import {
 
 const PageWrapper = () => {
     return <div>
-      <Router>
-            <ActionWheels />
-      </Router>
+        <ActionWheels />
     </div>
 
 };
 
 export default PageWrapper;
+

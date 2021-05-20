@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Layout, Menu, Dropdown } from 'antd';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
 //components
 import About from './About';
 import Contact from './Contact';
@@ -19,6 +26,7 @@ import {
 
 //styles
 import './styles.scss';
+
 
 // constants
 const { Header, Content, Footer } = Layout;
@@ -67,11 +75,19 @@ const ActionWheels = () => {
   const createMenu = (mode) => {
     return (
       <Menu className="navigationMenu" theme="light" mode={mode} defaultSelectedKeys={defaultSelectedKey}>
-        <Menu.Item className="menuItem" key="actionwheels" onClick={({key}) => renderComponent({key})}>ABOUT</Menu.Item>
-        <Menu.Item className="menuItem" key="contact" onClick={({key}) => renderComponent({key})}>CONTACT</Menu.Item>
-        <Menu.Item className="menuItem" key="products" onClick={({key}) => renderComponent({key})}>PRODUCTS</Menu.Item>
-        <Menu.Item className="menuItem" key="warranty" onClick={({key}) => renderComponent({key})}>WARRANTY</Menu.Item>
-        <Menu.Item className="menuItem" key="review" onClick={({key}) => renderComponent({key})}>REVIEW</Menu.Item>
+        <Menu.Item className="menuItem" key="actionwheels">
+            <Link to="/">ABOUT</Link>
+        </Menu.Item>
+        <Menu.Item className="menuItem" key="contact">
+            <Link to="/contact">CONTACT</Link>
+        </Menu.Item>
+        <Menu.Item className="menuItem" key="products">
+            <Link to="/products">PRODUCTS</Link>
+        </Menu.Item>
+        <Menu.Item className="menuItem" key="warranty">
+            <Link to="/warranty">WARRANTY</Link>
+        </Menu.Item>
+        <Menu.Item className="menuItem" key="review">RESOURCES</Menu.Item>
       </Menu>
     )
   };
@@ -85,6 +101,7 @@ const ActionWheels = () => {
   }, []);
 
   return (
+      <Router>
     <Layout theme="light">
       <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <img src={actionWheels} className="actionSiteLogo" id="desktopLogo"/>
@@ -101,14 +118,37 @@ const ActionWheels = () => {
         </div>
       </Header>
       <img src={talonBanner} className="actionWheelsBanner" />
-      {selectedPage === REVIEW && <ReviewBanner/>}
+      {window.location.pathname === "/reviews" && <ReviewBanner/>}
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
         <div style={{ padding: 24, minHeight: 380 }}>
-          {PAGE_PATHS[selectedPage]['component']}
+
+                <Switch>
+                    <Route path="/contact">
+                        <Contact />
+                    </Route>
+
+                    <Route path="/products">
+                        <ProductSearch />
+                    </Route>
+
+                    <Route path="/reviews">
+                        <ReviewPage />
+                    </Route>
+
+                    <Route path="/warranty">
+                        <Warranty />
+                    </Route>
+
+                    <Route path="/">
+                        <About />
+                    </Route>
+                </Switch>
+
         </div>
       </Content>
       <Footer className="actionWheelsFooter" style={{ textAlign: 'center' }} />
     </Layout>
+      </Router>
   )
 };
 
