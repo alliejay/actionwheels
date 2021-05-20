@@ -16,6 +16,10 @@
   display: none;
 }
 
+#mobileLogo {
+  display: none;
+}
+
 .navigationMenu {
   width: fit-content;
   float: right;
@@ -41,7 +45,6 @@
   float: left;
   width: 200px;
   margin: 5px;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .actionWheelsBanner {
@@ -130,10 +133,17 @@
 @media screen and (max-width: 850px) {
   .header {
     text-align: center;
+    background-color: #999999 !important;
   }
   .actionSiteLogo {
     float: none;
     width: 155px;
+  }
+  #desktopLogo {
+    display: none;
+  }
+  #mobileLogo {
+    display: inline-block;
   }
   .bigMenu {
     display: none;

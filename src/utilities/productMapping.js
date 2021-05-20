@@ -154,7 +154,7 @@ const DISNEY_EROS = [
     [productImage]: disneyPrincess,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Princess-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-for-your-little-Princess/842112795",
     [itemPosition]: 3,
-    [reviewItemPosition]: 4
+    [reviewItemPosition]: 5
   },
   {
     [productName]: "Disney Frozen Convertible Car 6-Volt Battery-Powered Ride-On",
@@ -162,7 +162,7 @@ const DISNEY_EROS = [
     [productImage]: disneyFrozen,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
     [itemPosition]: 2,
-    [reviewItemPosition]: 5
+    [reviewItemPosition]: 4
   },
   {
     [productName]: "Disney Sofia the First Convertible Car 6-Volt Battery-Powered Ride-On",

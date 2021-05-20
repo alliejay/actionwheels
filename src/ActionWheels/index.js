@@ -11,6 +11,7 @@ import ReviewBanner from './Review/reviewBanner.js'
 
 //images
 import actionWheels from '../img/action_wheels.png';
+import actionWheelsInv2 from '../img/action_wheels.inv2.png';
 import talonBanner from '../img/talon_banner.jpg';
 import {
   MenuOutlined
@@ -75,23 +76,19 @@ const ActionWheels = () => {
     )
   };
 
-  console.log("window.location.pathname", window.location.pathname);
-
   useEffect(() => {
     if(window.location.pathname === `/${REVIEW}/`) {
-      console.log("review hit")
       setSelectedPage(REVIEW)
     } else {
       setDefaultSelectedKey(['actionwheels']);
     }
   }, []);
 
-  console.log("selectedPage", selectedPage);
-
   return (
     <Layout theme="light">
       <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-        <img src={actionWheels} className="actionSiteLogo"/>
+        <img src={actionWheels} className="actionSiteLogo" id="desktopLogo"/>
+        <img src={actionWheelsInv2} className="actionSiteLogo" id="mobileLogo"/>
         <span className="bigMenu">
           {createMenu("horizontal")}
         </span>
