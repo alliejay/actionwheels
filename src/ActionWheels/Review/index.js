@@ -9,20 +9,22 @@ const ReviewPage = () => {
 
   useEffect(() => {
     const productInformation = transformData("Action Wheels", "products");
-    const data = _orderBy(productInformation.data, ['itemPosition'], ['desc']);
+    const data = _orderBy(productInformation.data, ['reviewItemPosition'], ['desc']);
     setData(data);
   }, []);
 
   useEffect(() => {
     setCards(data.map((item, index) => {
-      return (
-        <div className="reviewImageContainer">
-        <a href={item.walmartLink} target="blank">
-          <img className="reviewImage" src={item.image} />
-          <p className="reviewImageTitle">{item.reviewTitle}</p>
-        </a>
-        </div>
-      )
+        if(!item['excludeFromReview']) {
+            return (
+                <div className="reviewImageContainer">
+                    <a href={item.walmartLink} target="blank">
+                        <img className="reviewImage" src={item.image} />
+                        <p className="reviewImageTitle">{item.reviewTitle}</p>
+                    </a>
+                </div>
+            )
+        }
     }));
   }, [data]);
 
