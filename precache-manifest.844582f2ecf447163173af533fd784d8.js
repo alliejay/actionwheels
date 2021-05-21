@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05b377bbf5f368ea30f5ca25dc57db17",
+    "revision": "2f33a5cd5ed74022f97d286f09d28ae8",
     "url": "/index.html"
   },
   {
-    "revision": "c6a07191392a60e7289a",
+    "revision": "4b141e62163e1923017d",
     "url": "/static/css/2.9edc93b8.chunk.css"
   },
   {
-    "revision": "01b77d83a2630906eefe",
-    "url": "/static/css/main.7c70332c.chunk.css"
+    "revision": "eae85ea6446a868a68cd",
+    "url": "/static/css/main.af4f8c2c.chunk.css"
   },
   {
-    "revision": "c6a07191392a60e7289a",
-    "url": "/static/js/2.a304e556.chunk.js"
+    "revision": "4b141e62163e1923017d",
+    "url": "/static/js/2.910c17e1.chunk.js"
   },
   {
     "revision": "117d65892edc8adcd29d4a0d57b5a80a",
-    "url": "/static/js/2.a304e556.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.910c17e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01b77d83a2630906eefe",
-    "url": "/static/js/main.09a4a9af.chunk.js"
+    "revision": "eae85ea6446a868a68cd",
+    "url": "/static/js/main.fc937ef3.chunk.js"
   },
   {
     "revision": "500a7d678db1eaa629b0",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "694673f498088d164c8acd53a2eb92ca",
     "url": "/static/media/disneyFrozen6.694673f4.jpeg"
+  },
+  {
+    "revision": "7257685eeb656999ba67e9edfa264753",
+    "url": "/static/media/disneyFrozenGLS.7257685e.jpeg"
   },
   {
     "revision": "1166ee1c0cddb6f69e9e528df2670d07",

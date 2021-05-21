@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c70332c.chunk.css",
-    "main.js": "/static/js/main.09a4a9af.chunk.js",
-    "main.js.map": "/static/js/main.09a4a9af.chunk.js.map",
+    "main.css": "/static/css/main.af4f8c2c.chunk.css",
+    "main.js": "/static/js/main.fc937ef3.chunk.js",
+    "main.js.map": "/static/js/main.fc937ef3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3a253923.js",
     "runtime-main.js.map": "/static/js/runtime-main.3a253923.js.map",
     "static/css/2.9edc93b8.chunk.css": "/static/css/2.9edc93b8.chunk.css",
-    "static/js/2.a304e556.chunk.js": "/static/js/2.a304e556.chunk.js",
-    "static/js/2.a304e556.chunk.js.map": "/static/js/2.a304e556.chunk.js.map",
+    "static/js/2.910c17e1.chunk.js": "/static/js/2.910c17e1.chunk.js",
+    "static/js/2.910c17e1.chunk.js.map": "/static/js/2.910c17e1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1539e01027d82c386ae00d984d600a37.js": "/precache-manifest.1539e01027d82c386ae00d984d600a37.js",
+    "precache-manifest.844582f2ecf447163173af533fd784d8.js": "/precache-manifest.844582f2ecf447163173af533fd784d8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9edc93b8.chunk.css.map": "/static/css/2.9edc93b8.chunk.css.map",
-    "static/css/main.7c70332c.chunk.css.map": "/static/css/main.7c70332c.chunk.css.map",
-    "static/js/2.a304e556.chunk.js.LICENSE.txt": "/static/js/2.a304e556.chunk.js.LICENSE.txt",
+    "static/css/main.af4f8c2c.chunk.css.map": "/static/css/main.af4f8c2c.chunk.css.map",
+    "static/js/2.910c17e1.chunk.js.LICENSE.txt": "/static/js/2.910c17e1.chunk.js.LICENSE.txt",
     "static/media/action_wheels.png": "/static/media/action_wheels.c7494dd6.png",
     "static/media/action_wheels.inv2.png": "/static/media/action_wheels.inv2.5fddcc72.png",
     "static/media/batman12in.jpeg": "/static/media/batman12in.8085d325.jpeg",
@@ -24,6 +24,7 @@
     "static/media/columbiaTeton20.png": "/static/media/columbiaTeton20.8b462877.png",
     "static/media/disneyFrozen.jpeg": "/static/media/disneyFrozen.920a813c.jpeg",
     "static/media/disneyFrozen6.jpeg": "/static/media/disneyFrozen6.694673f4.jpeg",
+    "static/media/disneyFrozenGLS.jpeg": "/static/media/disneyFrozenGLS.7257685e.jpeg",
     "static/media/disneyFrozenScooter.jpeg": "/static/media/disneyFrozenScooter.1166ee1c.jpeg",
     "static/media/disneyPrincess.jpeg": "/static/media/disneyPrincess.ee0f4fad.jpeg",
     "static/media/disneySofia.jpeg": "/static/media/disneySofia.80f3062a.jpeg",
@@ -48,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.3a253923.js",
     "static/css/2.9edc93b8.chunk.css",
-    "static/js/2.a304e556.chunk.js",
-    "static/css/main.7c70332c.chunk.css",
-    "static/js/main.09a4a9af.chunk.js"
+    "static/js/2.910c17e1.chunk.js",
+    "static/css/main.af4f8c2c.chunk.css",
+    "static/js/main.fc937ef3.chunk.js"
   ]
 }
