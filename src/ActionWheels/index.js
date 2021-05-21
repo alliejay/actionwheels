@@ -108,45 +108,46 @@ const ActionWheels = () => {
       <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <img src={actionWheels} className="actionSiteLogo" id="desktopLogo"/>
         <img src={actionWheelsInv2} className="actionSiteLogo" id="mobileLogo"/>
-        <span className="bigMenu">
-          {createMenu("horizontal")}
-        </span>
-        <div className="hamburgerNav">
-          <Dropdown overlay={createMenu("vertical")}>
-            <a className="ant-dropdown-link">
-              <MenuOutlined className="hamburgerMenu" />
-            </a>
-          </Dropdown>
-        </div>
+        {/*<span className="bigMenu">*/}
+          {/*{createMenu("horizontal")}*/}
+        {/*</span>*/}
+        {/*<div className="hamburgerNav">*/}
+          {/*<Dropdown overlay={createMenu("vertical")}>*/}
+            {/*<a className="ant-dropdown-link">*/}
+              {/*<MenuOutlined className="hamburgerMenu" />*/}
+            {/*</a>*/}
+          {/*</Dropdown>*/}
+        {/*</div>*/}
       </Header>
       <img src={talonBanner} className="actionWheelsBanner" />
-        <Route path="/reviews">
+        {/*<Route path="/reviews">*/}
             <ReviewBanner />
-        </Route>
+        {/*</Route>*/}
       <Content className="site-layout contentBox" style={{ padding: '0 50px', marginTop: 64 }}>
         <div style={{ padding: 24, minHeight: 380 }}>
+            <ReviewPage />
 
-                <Switch>
-                    <Route path="/contact">
-                        <Contact />
-                    </Route>
+                {/*<Switch>*/}
+                    {/*<Route path="/contact">*/}
+                        {/*<Contact />*/}
+                    {/*</Route>*/}
 
-                    <Route path="/products">
-                        <ProductSearch />
-                    </Route>
+                    {/*<Route path="/products">*/}
+                        {/*<ProductSearch />*/}
+                    {/*</Route>*/}
 
-                    <Route path="/reviews">
-                        <ReviewPage />
-                    </Route>
+                    {/*<Route path="/reviews">*/}
+                        {/*<ReviewPage />*/}
+                    {/*</Route>*/}
 
-                    <Route path="/warranty">
-                        <Warranty />
-                    </Route>
+                    {/*<Route path="/warranty">*/}
+                        {/*<Warranty />*/}
+                    {/*</Route>*/}
 
-                    <Route path="/">
-                        <About />
-                    </Route>
-                </Switch>
+                    {/*<Route path="/">*/}
+                        {/*<About />*/}
+                    {/*</Route>*/}
+                {/*</Switch>*/}
 
         </div>
       </Content>

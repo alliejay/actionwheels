@@ -27,6 +27,7 @@ import batman12in from '../img/products/batman12in.jpeg';
 import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
 import columbiaTeton20 from '../img/products/columbiaTeton20.png';
 import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
+import disneyFrozenGLS from "../img/products/disneyFrozenGLS.jpeg";
 
 const productName = "productName";
 const productImage = "productImage";
@@ -149,6 +150,14 @@ const YAMAHA_PRODUCTS = {
 
 const DISNEY_EROS = [
   {
+      [productName]: "Disney 12V Frozen Mercedes GLS-320 Battery Powered Ride-on",
+      [reviewTitle]: "12V Disney Frozen Mercedes",
+      [productImage]: disneyFrozenGLS,
+      [walmartLink]: "https://www.walmart.com/ip/12-Volt-Frozen-Mercedes-GLS-320-Battery-Powered-Ride-on/551983082",
+      [itemPosition]: 0,
+      [reviewItemPosition]: 6
+  },
+  {
     [productName]: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
     [reviewTitle]: "6V Disney Princess Mercedes",
     [productImage]: disneyPrincess,
@@ -181,14 +190,14 @@ const DISNEY_EROS = [
     [itemPosition]: 0,
     [reviewItemPosition]: 7
   },
-  {
-    [productName]: "Disney Frozen Mercedes 6-Volt Battery Powered Ride-On",
-    [reviewTitle]: "6V Frozen Mercedes",
-    [productImage]: disneyFrozen6,
-    [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-For-Your-Little-Elsa-or-Anna/55627507?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&sharedid=test",
-    [itemPosition]: 0,
-    [reviewItemPosition]: 6
-  },
+  // {
+  //   [productName]: "Disney Frozen Mercedes 6-Volt Battery Powered Ride-On",
+  //   [reviewTitle]: "6V Frozen Mercedes",
+  //   [productImage]: disneyFrozen6,
+  //   [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-For-Your-Little-Elsa-or-Anna/55627507?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSd3lo0F:0Y0&sharedid=test",
+  //   [itemPosition]: 0,
+  //   [reviewItemPosition]: 6
+  // },
   {
     [productName]: "6 Volt Disney Frozen 3-Wheel Scooter Battery Powered Ride-On",
     [reviewTitle]: "6V Frozen Scooter",
