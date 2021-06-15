@@ -14,7 +14,7 @@ const ContactForm = () => {
 
   const onFinish = values => {
     const body = JSON.stringify(values);
-    fetch('http://localhost:5000/send', {
+    fetch('https://localhost:5000/send', {
       method: "POST",
       body,
       headers: {
