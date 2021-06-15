@@ -1,5 +1,5 @@
 {
-  "homepage": "http://alliejay.github.io",
+  "homepage": "https://alliejay.github.io",
   "name": "ballard-web",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://localhost:5000/",
   "eslintConfig": {
     "extends": "react-app"
   },
