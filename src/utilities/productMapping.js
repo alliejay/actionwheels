@@ -28,6 +28,10 @@ import wonderWoman16in from '../img/products/wonderWoman16in.jpeg';
 import columbiaTeton20 from '../img/products/columbiaTeton20.png';
 import columbiaHybrid700 from '../img/products/columbiaHybrid700.png';
 import disneyFrozenGLS from "../img/products/disneyFrozenGLS.jpeg";
+import monsterJam24v from "../img/products/monsterJam24v.jpeg";
+import monsterJam6v from "../img/products/monsterJam6v.jpeg";
+import helloKitty12v from "../img/products/helloKitty12v.jpeg";
+import batman12v from '../img/products/batmobile12v.jpeg';
 
 const productName = "productName";
 const productImage = "productImage";
@@ -108,7 +112,8 @@ const YAMAHA_EROS = [
     [productImage]: yamahaXYZ,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-YXZ-Battery-Powered-Ride-On-Aggressive-Design-for-serious-Off-Road-Fun/55627504",
     [itemPosition]: -1,
-    [reviewItemPosition]: 0
+    [reviewItemPosition]: 0,
+    [excludeFromReview]: true
   },
   {
     [productName]: "6 Volt Yamaha Viking Battery Powered Ride-On",
@@ -116,7 +121,8 @@ const YAMAHA_EROS = [
     [productImage]: yamahaViking,
     [walmartLink]: "https://www.walmart.com/ip/6-Volt-Yamaha-Viking-Battery-Powered-Ride-On-Hours-of-fun-with-this-kid-size-UTV/52674911",
     [itemPosition]: 0,
-    [reviewItemPosition]: 0
+    [reviewItemPosition]: 0,
+    [excludeFromReview]: true
   }
 ];
 
@@ -171,7 +177,8 @@ const DISNEY_EROS = [
     [productImage]: disneyFrozen,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Convertible-Car-6-Volt-Battery-Powered-Ride-On/37312935?athcpid=37312935&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=13236ddb-007-1754250813b751&athancid=null&athena=true",
     [itemPosition]: 2,
-    [reviewItemPosition]: 4
+    [reviewItemPosition]: 4,
+    [excludeFromReview]: true
   },
   {
     [productName]: "Disney Sofia the First Convertible Car 6-Volt Battery-Powered Ride-On",
@@ -179,7 +186,8 @@ const DISNEY_EROS = [
     [productImage]: disneySofia,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Sofia-the-First-Convertible-Car-6-Volt-Battery-Powered-Ride-On/25414430?athcpid=25414430&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=86379c4a-007-17542517cb31bc&athancid=null&athena=true",
     [itemPosition]: 1,
-    [reviewItemPosition]: 0
+    [reviewItemPosition]: 0,
+    [excludeFromReview]: true
   },
   {
     [productName]: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
@@ -212,7 +220,8 @@ const DISNEY_EROS = [
     [productImage]: disneyFrozenSleigh,
     [walmartLink]: "https://www.walmart.com/ip/Disney-Frozen-Sleigh-12-Volt-Battery-Powered-Ride-On-for-your-little-Elsa-and-Anna-Hours-of-Fun/440160665?athcpid=440160665&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e455f5e2-007-1754254c218768&athancid=null&athena=true",
     [itemPosition]: -3,
-    [reviewItemPosition]: 0
+    [reviewItemPosition]: 0,
+    [excludeFromReview]: true
   }
 ];
 
@@ -253,6 +262,15 @@ const BATMAN_EROS = [
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
+  {
+    [productName]: "12V Batman Batmobile Battery Powered Ride On - Authentic THE BATMAN BATMOBILE design",
+    [reviewTitle]: "12V Batmobile",
+    [productImage]: batman12v,
+    [walmartLink]: "https://www.walmart.com/ip/12V-Batman-Batmobile-Battery-Powered-Ride-On-Authentic-THE-BATMAN-BATMOBILE-design-Includes-RC-Motorcycle-for-Boys-Girls-Ages-3-and-up/883211469",
+    [itemPosition]: 0,
+    [reviewItemPosition]: 0
+  },
+
 ];
 
 //TODO change to DC_COMICS
@@ -291,6 +309,44 @@ const BATMAN_PRODUCTS = {
   [bikes]: BATMAN_BIKES
 };
 
+const MONSTER_JAM_EROS = [
+  {
+    [productName]: "Monster Jam 24 Volt El Toro Loco Monster Truck that Blows Smoke",
+    [reviewTitle]: "24V Monster Jam El Toro Loco",
+    [productImage]: monsterJam24v,
+    [walmartLink]: "https://www.walmart.com/ip/Monster-Jam-24-Volt-El-Toro-Loco-Monster-Truck-that-Blows-Smoke-For-Boys-Girls-Ages-3-and-up/379549900",
+    [itemPosition]: 0,
+    [reviewItemPosition]: 0
+  },
+  {
+    [productName]: "6 Volt Grave Digger Ride On Monster Truck with Authentic Monster Jam Graphics",
+    [reviewTitle]: "6V Grave Digger Monster Truck",
+    [productImage]: monsterJam6v,
+    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Grave-Digger-Ride-On-Monster-Truck-with-Authentic-Monster-Jam-Graphics-for-Boys-Girls-Ages-18-36-months/289988419",
+    [itemPosition]: 0,
+    [reviewItemPosition]: 0
+  }
+];
+
+const MONSTER_JAM_PRODUCTS = {
+  [eros]: MONSTER_JAM_EROS
+};
+
+const HELLO_KITTY_EROS = [
+  {
+    [productName]: 'Hello Kitty 12 Volt “Eats and Treats” Sweet Food Truck',
+    [reviewTitle]: "12V Hello Kitty Food Truck",
+    [productImage]: helloKitty12v,
+    [walmartLink]: "https://www.walmart.com/ip/Hello-Kitty12-Volt-Eats-and-Treats-Sweet-Food-Truck-Play-Center-Ride-On-for-Boys-Girls-Ages-3-and-up/127919099?athbdg=L1100",
+    [itemPosition]: 0,
+    [reviewItemPosition]: 0
+  }
+];
+
+const HELLO_KITTY_PRODUCTS = {
+  [eros]: HELLO_KITTY_EROS
+};
+
 const SEA_SCOOTER_EROS = [
   {
     [productName]: "12 Volt SEASCOOTER - Battery Powered Ride-On Water Toy",
@@ -298,7 +354,8 @@ const SEA_SCOOTER_EROS = [
     [productImage]: seaScooter,
     [walmartLink]: "https://www.walmart.com/ip/12-Volt-SEASCOOTER-Exciting-New-Wal-Mart-Exclusive-Battery-Powered-Ride-On-Water-Toy/945884402",
     [itemPosition]: 9,
-    [reviewItemPosition]: 0
+    [reviewItemPosition]: 0,
+    [excludeFromReview]: true
   },
 ];
 
@@ -333,7 +390,7 @@ const COLUMBIA_PRODUCTS = {
 export const PARENT_COMPANIES = [
   {
     name: "Action Wheels",
-    productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS, DISNEY_PRODUCTS, THUNDER_TANK_PRODUCTS, BATMAN_PRODUCTS, SEA_SCOOTER_PRODUCTS]
+    productList: [HONDA_PRODUCTS, YAMAHA_PRODUCTS, DISNEY_PRODUCTS, THUNDER_TANK_PRODUCTS, BATMAN_PRODUCTS, SEA_SCOOTER_PRODUCTS, HELLO_KITTY_PRODUCTS, MONSTER_JAM_PRODUCTS]
   },
   {
     name: "Columbia",
@@ -355,8 +412,16 @@ export const BRANDS = [
     productList: [DISNEY_PRODUCTS]
   },
   {
+    name: "Hello Kitty",
+    productList: [HELLO_KITTY_PRODUCTS]
+  },
+  {
     name: "Honda",
     productList: [HONDA_PRODUCTS]
+  },
+  {
+    name: "Monster Jam",
+    productList: [MONSTER_JAM_PRODUCTS]
   },
   {
     name: "SeaScooter",
