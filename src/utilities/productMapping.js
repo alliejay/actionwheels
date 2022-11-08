@@ -52,7 +52,7 @@ const HONDA_EROS = [
     [productName]: "Honda 12 Volt Talon UTV",
     [reviewTitle]: "Honda 12V Talon",
     [productImage]: honda12vt,
-    [walmartLink]: "https://www.walmart.com/ip/12-VOLT-HONDA-TALON-UTV-Honda-Official-Licensed-Product/577126686?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSdxJo0F:0Y0&sharedid=test",
+    [walmartLink]: "https://www.walmart.com/reviews/product/577126686",
     [assemblyGuide]: 'manuals/assembly/honda12v.pdf',
     [itemPosition]: 6,
     [reviewItemPosition]: 10
@@ -61,7 +61,7 @@ const HONDA_EROS = [
     [productName]: "6 Volt Honda Metropolitan Pink Battery Powered Ride-on",
     [reviewTitle]: "Honda 6V Metropolitan",
     [productImage]: hondaScooter,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Honda-Metropolitan-Pink-Battery-Powered-Ride-on-Perfect-for-your-darling-little-girl/883630988?athcpid=883630988&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=7928bce8-007-175425412cc12d&athancid=null&athena=true",
+    [walmartLink]: "https://www.walmart.com/reviews/product/883630988",
     [itemPosition]: -2,
     [assemblyGuide]: "manuals/assembly/honda6vScooter.pdf",
     [reviewItemPosition]: 0
@@ -70,7 +70,7 @@ const HONDA_EROS = [
     [productName]: "6 Volt Black Honda TRX Battery Powered Ride-On ATV",
     [reviewTitle]: "Honda 6V TRX",
     [productImage]: hondaBlack6,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Black-Honda-TRX-Battery-Powered-Ride-On-ATV/495925421",
+    [walmartLink]: "https://www.walmart.com/reviews/product/495925421",
     [itemPosition]: 5,
     [reviewItemPosition]: 0
   },
@@ -78,7 +78,7 @@ const HONDA_EROS = [
     [productName]: "12 Volt Honda Black TRX Battery Powered Ride-On",
     [reviewTitle]: "Honda 12V TRX",
     [productImage]: hondaBlack12,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Honda-Black-TRX-Battery-Powered-Ride-On/399851452",
+    [walmartLink]: "https://www.walmart.com/reviews/product/399851452",
     [itemPosition]: 4,
     [reviewItemPosition]: 0
   }
@@ -93,7 +93,7 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha Raptor Battery Powered Ride-on Black/Green",
     [reviewTitle]: "Yamaha 12V Raptor",
     [productImage]: yamaha12vt,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Raptor-Battery-Powered-Ride-on-Black-Green-New-Custom-Graphic-Design/861364225",
+    [walmartLink]: "https://www.walmart.com/reviews/product/861364225",
     [assemblyGuide]: 'manuals/assembly/yamaha12v.pdf',
     [itemPosition]: 8,
     [reviewItemPosition]: 9
@@ -102,7 +102,7 @@ const YAMAHA_EROS = [
     [productName]: "12 Volt Yamaha Grizzly Blue",
     [reviewTitle]: "Yamaha 12V Grizzly",
     [productImage]: hondaGrizzly,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Yamaha-Grizzly-Blue/673924141?athcpid=673924141&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=f2d02ede-007-1754252a8b7264&athancid=null&athena=true",
+    [walmartLink]: "https://www.walmart.com/reviews/product/673924141",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -159,7 +159,7 @@ const DISNEY_EROS = [
       [productName]: "Disney 12V Frozen Mercedes GLS-320 Battery Powered Ride-on",
       [reviewTitle]: "12V Disney Frozen Mercedes",
       [productImage]: disneyFrozenGLS,
-      [walmartLink]: "https://www.walmart.com/ip/12-Volt-Frozen-Mercedes-GLS-320-Battery-Powered-Ride-on/551983082",
+      [walmartLink]: "https://www.walmart.com/reviews/product/551983082",
       [itemPosition]: 0,
       [reviewItemPosition]: 6
   },
@@ -167,7 +167,7 @@ const DISNEY_EROS = [
     [productName]: "Disney Princess Mercedes 6-Volt Battery Powered Ride-On",
     [reviewTitle]: "6V Disney Princess Mercedes",
     [productImage]: disneyPrincess,
-    [walmartLink]: "https://www.walmart.com/ip/Disney-Princess-Mercedes-6-Volt-Battery-Powered-Ride-On-Perfect-for-your-little-Princess/842112795",
+    [walmartLink]: "https://www.walmart.com/reviews/product/842112795",
     [itemPosition]: 3,
     [reviewItemPosition]: 5
   },
@@ -193,7 +193,7 @@ const DISNEY_EROS = [
     [productName]: "12 Volt Minnie Mouse Mercedes GLS-320 Battery Powered Ride-On",
     [reviewTitle]: "12V Minnie Mercedes",
     [productImage]: minnieMouse,
-    [walmartLink]: "https://www.walmart.com/ip/12-Volt-Minnie-Mouse-Mercedes-GLS-320-Battery-Powered-Ride-On/139212311?irgwc=1&sourceid=imp_TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&veh=aff&wmlspartner=imp_1911725&clickid=TVn1NExR0xyLTOdwUx0Mo38KUkExSYXJo0F:0Y0&sharedid=test",
+    [walmartLink]: "https://www.walmart.com/reviews/product/139212311",
     [assemblyGuide]: "manuals/assembly/minnieMouse12v.pdf",
     [itemPosition]: 0,
     [reviewItemPosition]: 7
@@ -210,7 +210,7 @@ const DISNEY_EROS = [
     [productName]: "6 Volt Disney Frozen 3-Wheel Scooter Battery Powered Ride-On",
     [reviewTitle]: "6V Frozen Scooter",
     [productImage]: disneyFrozenScooter,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Disney-Frozen-3-Wheel-Scooter-Battery-Powered-Ride-On/52674914?athcpid=52674914&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=27d5dfe0-007-1754253cdd895f&athancid=null&athena=true",
+    [walmartLink]: "https://www.walmart.com/reviews/product/52674914",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -234,7 +234,7 @@ const THUNDER_TANK_EROS = [
     [productName]: "24 Volt Thunder Tank Ride-On With Working Cannon and Rotating Turret",
     [reviewTitle]: "24V Thunder Tank",
     [productImage]: thunderTank,
-    [walmartLink]: "https://www.walmart.com/ip/NEW-WALMART-EXCLUSIVE-24-Volt-Thunder-Tank-Ride-On-With-Working-Cannon-and-Rotating-Turret/204394575?athcpid=204394575&athpgid=athenaItemPage&athcgid=null&athznid=PWVAV&athieid=v0&athstid=CS020&athguid=e917c4fe-007-175425342f7517&athancid=null&athena=true",
+    [walmartLink]: "https://www.walmart.com/reviews/product/204394575",
     [itemPosition]: 7,
     [reviewItemPosition]: 8,
     [assemblyGuide]: 'manuals/assembly/thunder_tank.pdf'
@@ -250,7 +250,7 @@ const BATMAN_EROS = [
     [productName]: "6 Volt DC Comics Batman Batmobile Battery Powered Ride-on",
     [reviewTitle]: "6V Batmobile",
     [productImage]: batMobile,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-DC-Comics-Batman-Batmobile-Battery-Powered-Ride-on-Features-Light-up-Cannons-and-Sounds/513873743",
+    [walmartLink]: "https://www.walmart.com/reviews/product/513873743",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -258,7 +258,7 @@ const BATMAN_EROS = [
     [productName]: "Batman Batmobile 6-Volt Battery-Powered Ride-On",
     [reviewTitle]: "6V Batmobile",
     [productImage]: batMobile6,
-    [walmartLink]: "https://www.walmart.com/ip/Batman-Batmobile-6-Volt-Battery-Powered-Ride-On/53341544?athcpid=53341544&athpgid=athenaItemPage&athcgid=null&athznid=PWVUB&athieid=v0&athstid=CS020&athguid=a155d614-008-17542590d9f64d&athancid=null&athena=true",
+    [walmartLink]: "https://www.walmart.com/reviews/product/53341544",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -266,7 +266,7 @@ const BATMAN_EROS = [
     [productName]: "12V Batman Batmobile Battery Powered Ride On - Authentic THE BATMAN BATMOBILE design",
     [reviewTitle]: "12V Batmobile",
     [productImage]: batman12v,
-    [walmartLink]: "https://www.walmart.com/ip/12V-Batman-Batmobile-Battery-Powered-Ride-On-Authentic-THE-BATMAN-BATMOBILE-design-Includes-RC-Motorcycle-for-Boys-Girls-Ages-3-and-up/883211469",
+    [walmartLink]: "https://www.walmart.com/reviews/product/883211469",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -314,7 +314,7 @@ const MONSTER_JAM_EROS = [
     [productName]: "Monster Jam 24 Volt El Toro Loco Monster Truck that Blows Smoke",
     [reviewTitle]: "24V Monster Jam El Toro Loco",
     [productImage]: monsterJam24v,
-    [walmartLink]: "https://www.walmart.com/ip/Monster-Jam-24-Volt-El-Toro-Loco-Monster-Truck-that-Blows-Smoke-For-Boys-Girls-Ages-3-and-up/379549900",
+    [walmartLink]: "https://www.walmart.com/reviews/product/379549900",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   },
@@ -322,7 +322,7 @@ const MONSTER_JAM_EROS = [
     [productName]: "6 Volt Grave Digger Ride On Monster Truck with Authentic Monster Jam Graphics",
     [reviewTitle]: "6V Grave Digger Monster Truck",
     [productImage]: monsterJam6v,
-    [walmartLink]: "https://www.walmart.com/ip/6-Volt-Grave-Digger-Ride-On-Monster-Truck-with-Authentic-Monster-Jam-Graphics-for-Boys-Girls-Ages-18-36-months/289988419",
+    [walmartLink]: "https://www.walmart.com/reviews/product/289988419",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   }
@@ -337,7 +337,7 @@ const HELLO_KITTY_EROS = [
     [productName]: 'Hello Kitty 12 Volt “Eats and Treats” Sweet Food Truck',
     [reviewTitle]: "12V Hello Kitty Food Truck",
     [productImage]: helloKitty12v,
-    [walmartLink]: "https://www.walmart.com/ip/Hello-Kitty12-Volt-Eats-and-Treats-Sweet-Food-Truck-Play-Center-Ride-On-for-Boys-Girls-Ages-3-and-up/127919099?athbdg=L1100",
+    [walmartLink]: "https://www.walmart.com/reviews/product/127919099",
     [itemPosition]: 0,
     [reviewItemPosition]: 0
   }
